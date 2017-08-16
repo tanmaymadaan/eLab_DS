@@ -39,19 +39,15 @@ OUTPUT
 #include <iostream>
 using namespace std;
  
-// Returns count buildings that can see sunlight
+
 int countBuildings(int arr[], int n)
 {
-    // Initialuze result  (Note that first building
-    // always sees sunlight)
+    
     int count = 1;
- 
-    // Start traversing element
     int curr_max = arr[0];
     for (int i=1; i<n; i++)
     {
-        // If curr_element is maximum,
-        // update maximum and increment count
+       
         if (arr[i] > curr_max)
         {
             count++;
